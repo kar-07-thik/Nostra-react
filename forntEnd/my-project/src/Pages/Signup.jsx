@@ -48,7 +48,7 @@ const Signup = () => {
             setSEpass(true)
         }
         if (Isvalid) {
-            axios.post("ttps://nostra-react.onrender.com/Signup",{"Username":Suser,"Email":Semail,"Password":Spass})
+            axios.post("https://nostra-react.onrender.com/Signup",{"Username":Suser,"Email":Semail,"Password":Spass})
             Navigate("/")
         }
     }

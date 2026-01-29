@@ -36,7 +36,7 @@ const Login = () => {
             setLEpass(true)
         }
         if (Isvalid) {
-            axios.post("ttps://nostra-react.onrender.com/Login", { "Loginemail": Lemail, "Loginpass": Lpass }).then(function (Smsg) {
+            axios.post("https://nostra-react.onrender.com/Login", { "Loginemail": Lemail, "Loginpass": Lpass }).then(function (Smsg) {
                 console.log(Smsg)
                 if (Smsg.data == true) {
                     Navigate("/Home")
